@@ -17,9 +17,12 @@
 > 호스트의 도메인 이름과 호스트의 네트워크 주소를 변환
 
 ## Stateful과 Stateless란?
-> 내용
+> stateful : 클라이언트-서버 관계에서 서버가 클라이언트의 상태를 보존함 (상태유지)
+> stateless : 클라이언트-서버 관계에서 서버가 클라이언트의 상태를 보존하지 않음 (무상태)
 ### Stateful과 Stateless의 차이점
-
+1. stateful은 서버가 클라이언트의 세션 정보를 저장하는 반면 stateless는 세션 관리를 클라이언트 측에서 관리함
+2. stateful은 클라이언트, 서버 관계에서 서버가 클라이언트의 상태를 보존하는 반면 stateless는 보존하지 않음
+3. stateful은 클라이언트의 다음 요청이 이전 요청과 관계가 이어지는 반면 stateless는 클라이언트의 요청이 오면 서버는 단순히 응답을 보냄
 ## HTTP란?
 > Hypertext Transfer Protocol의 약어
 > 웹브라우저와 웹서버 간 정보를 주고받기 위한 통신 규약
