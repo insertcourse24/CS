@@ -18,30 +18,30 @@
 
 ## Stateful과 Stateless란?
 > 내용
-
 ### Stateful과 Stateless의 차이점
 
 ## HTTP란?
-> 내용
+> Hypertext Transfer Protocol의 약어
+> 웹브라우저와 웹서버 간 정보를 주고받기 위한 통신 규약
 ### HTTP 메세지 기본 구조 알아보기
-- Start Line
-- Header
-  - Content-Length
-  - Content-Type
-  - Host
-  - Date
-  - User-Agent
-  - Accept
-- Body
+- Start Line : 요청과 응답을 정의하는 첫 번째 줄
+- Header : 브라우저가 필요한 정보 전달
+  - Content-Length : 메시지 본문의 길이를 바이트 단위로 지정
+  - Content-Type : 본문의 데이터 형식을 나타내는 MIME 타입을 지정
+  - Host : 요청을 보내는 서버의 도메인 이름 또는 IP 주소와 포트 번호 지정
+  - Date : 메시지가 전송된 날짜와 시간을 지정
+  - User-Agent : 요청을 보내는 사용자의 식별 정보 `ex) User-Agent: <product 식별자> / <product-version 버전번호> <comment 식별자의 정보>`
+  - Accept : 클라이언트가 서버로부터 받고자 하는 콘텐츠 타입을 지정
+- Body : 클라이언트가 서버로 데이터를 전송할 때 사용되는 영역
 ### 상태 코드란?
-- 200
-- 201
-- 300
-- 400
-- 401
-- 403
-- 404
-- 500
+- 200 : 요청성공 + 서버가 요청한 리소스를 클라이언트에게 반환
+- 201 : 요청성공 + 서버에 새로운 리소스 생성
+- 300 : 요청된 리소스에 대한 여러가지 응답을 클라이언트가 선택해야함
+- 400 : 클라이언트의 요청이 잘못됨
+- 401 : 요청된 리소스를 접근하기 위해 클라이언트가 인증되지 않았음
+- 403 : 클라이언트의 권한 문제로 인해 요청을 거부함
+- 404 : 요청된 리소스를 찾을 수 없음
+- 500 : 요청을 처리하는 중 예상치 못한 문제 발생
 ### http 메서드 알아보기 ([참고](https://inpa.tistory.com/entry/WEB-%F0%9F%8C%90-HTTP-%EB%A9%94%EC%84%9C%EB%93%9C-%EC%A2%85%EB%A5%98-%ED%86%B5%EC%8B%A0-%EA%B3%BC%EC%A0%95-%F0%9F%92%AF-%EC%B4%9D%EC%A0%95%EB%A6%AC))
 - GET
 - POST
