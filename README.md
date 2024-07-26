@@ -66,8 +66,9 @@
 - DELETE: 리소스를 삭제하는 메서드이다.
 ### http와 https의 차이 알아보기
 <p>
-  https는 암호화 및 인증이 있는 http이다. https는 TLS(SSL)를 사용하여 일반 http요청과 응답을 암호화한다. 그래서 https는 http에 비해 보안상 더 안전한 프로토콜이다.
+  https는 암호화 및 인증이 있는 http이다. https는 TLS(SSL)를 사용하여 일반 http요청과 응답을 암호화한다. SSL이란, 웹사이트와 브라우저 사이 또는 두 서버 사이에 전송되는 데이터를 암호화하여 인터넷 연결을 보호하기 위한 표준 기술이다. TLS는 SSL보다 안전한 버전이다. https는 http에 비해 보안상 더 안전한 프로토콜이다.
 </p>
+<img width="311" alt="image" src="https://github.com/user-attachments/assets/1c687718-a800-485b-a6f4-0532ed3cec8c">
 
 ## 세계표준시(UTC)란?
 > 국제적인 표준 시간의 기준으로 쓰이는 시각을 말한다. 1972년 1월 1일부터 시행된 국제 표준시로 국제사회가 사용하는 과학적 시간의 표준이다. UTC에서 0시, 즉 기준점에 달하는 도시는 런던이다.
