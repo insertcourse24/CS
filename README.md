@@ -30,20 +30,21 @@
 </p>
 
 ## HTTP란?
-> HTTP란 서버와 클라이언트 사이에 이루어지는 요청과 응답 데이터를 전송하는 방식이다. 우리가 흔히 사용하는 http://abc.com 은 abc.com이라는 주소가 가진 데이터 정보 등의 교환을 HTTP 방식으로 처리한다는것이다.
+> HTTP란 서버와 클라이언트 사이에 이루어지는 요청과 응답 데이터를 전송하는 방식이다. 우리가 흔히 사용하는 http://abc.com 은 abc.com이라는 주소가 가진 데이터 정보 등의 교환을 HTTP 방식으로 처리한다는것이다. HTTP는 특정 상태를 유지하지 않는 특징이 있다.
 ### HTTP 메세지 기본 구조 알아보기
-- Start Line: HTTP Request Message의 시작 라인이다.
+- Start Line: HTTP Request Message의 시작 라인이다. 항상 첫번째 줄에 위치한다.
   
       GET /test.html HTTP/1.1
       [HTTP Method] [Request target] [HTTP version]
 - Header: 해당 Request에 대한 추가 정보를 담고 있는 부분이다.
-  - Content-Length
-  - Content-Type
-  - Host
-  - Date
-  - User-Agent
-  - Accept
-- Body
+  - Content-Length: 헤더 이후 요청한 파일의 데이터의 길이이다. 바이트 단위로 나타낸다.
+  - Content-Type: 클라이언트에게 반환된 데이터의 미디어 유형을 알려준다.
+  - Host: 요청하려는 서버 호스트 이름과 포트번호를 나타낸다.
+  - Date: 현재 날짜를 나타낸다.
+  - User-Agent: 클라이언트 프로그램 정보를 나타낸다. 이 정보를 통해 서버는 클라이언트 프로그램(브라우저)에 맞는 최적의 데이터를 보내줄 수 있다.
+  - Accept: 클라이언트가 처리 가능한 미디어 타입 종류 나열한다.
+- Body: HTTP Request가 전송하는 데이터를 담고 있는 부분이다. 전송하는 데이터가 없다면 body 부분은 비어있다.
+  
 ### 상태 코드란?
 - 200: 요청이 성공적으로 처리되었음을 의미한다. 성공의 의미는 http메소드에 따라 달라진다.
 - 201: 요청이 성공적으로 처리되었으며 그 결과로 새로운 리소스가 생성되었음을 의미한다.
