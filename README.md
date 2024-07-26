@@ -32,8 +32,11 @@
 ## HTTP란?
 > HTTP란 서버와 클라이언트 사이에 이루어지는 요청과 응답 데이터를 전송하는 방식이다. 우리가 흔히 사용하는 http://abc.com 은 abc.com이라는 주소가 가진 데이터 정보 등의 교환을 HTTP 방식으로 처리한다는것이다.
 ### HTTP 메세지 기본 구조 알아보기
-- Start Line
-- Header
+- Start Line: HTTP Request Message의 시작 라인이다.
+  
+      GET /test.html HTTP/1.1
+      [HTTP Method] [Request target] [HTTP version]
+- Header: 해당 Request에 대한 추가 정보를 담고 있는 부분이다.
   - Content-Length
   - Content-Type
   - Host
